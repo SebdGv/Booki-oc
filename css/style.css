@@ -145,6 +145,7 @@ nav ul li:hover {
 }
 .search-input:focus{
     outline: none;
+
 }
 
 ::placeholder{
@@ -178,22 +179,24 @@ nav ul li:hover {
 .filters-btn {
     padding: 20px 0 35px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 20px;
 }
 
 .btn {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:center;
 
     padding: 12px;
     border: 2px solid var(--main-bg-color);
     border-radius: 300px;
+    max-width: 173px;
     background: #fff;
 }
-
+.btn span{
+    margin-left: 10px;
+}
 .btn:hover,
 .btn:active {
     background: var(--lightblue);
