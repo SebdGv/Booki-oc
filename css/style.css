@@ -36,23 +36,14 @@ body {
 
 h1{
     font-size: 22px;
-    font-weight: var(--bold-font-weight);
-    padding-bottom: 8px;
 }
 
 h2{
     font-size: 18px;
-    font-weight: var(--bold-font-weight);
 }
 
 h3{
     font-size: 16px;
-    font-weight: var(--bold-font-weight);
-}
-
-p{
-    font-size: 16px ;
-    font-weight: var(--regular-font-weight);
 }
 
 .card p{
@@ -145,7 +136,6 @@ nav ul li:hover {
 }
 .search-input:focus{
     outline: none;
-
 }
 
 ::placeholder{
@@ -153,6 +143,7 @@ nav ul li:hover {
     font-weight: var(--bold-font-weight);
     font-size: 18px;
 }
+
 
 .search-btn span {
     color: #fff;
