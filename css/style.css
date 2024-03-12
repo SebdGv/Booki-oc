@@ -175,28 +175,26 @@ nav ul li:hover {
 
 /*--- Filters button --*/
 
-
-.filters-btn {
-    padding: 20px 0 35px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+.filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-
-    padding: 12px;
-    border: 2px solid var(--main-bg-color);
-    border-radius: 300px;
-    max-width: 173px;
     background: #fff;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+
+    height: 50px;
+    padding: 0 19px;
+    margin-left: 15px;
 }
-.btn span{
+
+.btn span {
     margin-left: 10px;
 }
+
 .btn:hover,
 .btn:active {
     background: var(--lightblue);
