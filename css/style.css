@@ -389,6 +389,13 @@ nav ul li:hover {
         width: 30%;
     }
 
+    .filters {
+    display: inline-block;
+    }
+    .filters-btn .btn{
+        margin: 20px 15px 0 0;
+    }
+
     .activites-cards img {
         height: 200px;
     }
