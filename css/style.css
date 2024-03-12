@@ -215,7 +215,7 @@ nav ul li:hover {
 .info-text {
     display: flex;
     align-items: center;
-    margin-bottom: 37.5px;
+    margin-bottom: 35px;
 }
 
 .fa-solid.fa-info {
@@ -452,7 +452,7 @@ nav ul li:hover {
  /* Mobile Search section */
 
  .search{
-     padding: 20px 20px 20px 0;
+     padding: 49px 20px 0px 20px;
     }
     .search-bar{
         justify-content: center;
@@ -491,15 +491,23 @@ nav ul li:hover {
 
  .hebergements-and-populaires section {
      background-color:#fff;
- }
- .hebergements-and-populaires{
-    flex-direction: column-reverse;
- }
+    }
+    
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+        margin-top: 0; 
+    }
 
- .populaires-cards{
-    display: flex;
-    flex-direction: column;
-}
+    section.populaires{
+        margin: 0;
+        background:var(--main-bg-color);
+        border-radius: 0px;
+    }
+
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+    }
     
     .populaires-cards a {
         width: auto;
