@@ -26,7 +26,9 @@ body {
     display: flex;
     justify-content: center;
 }
-
+html {
+        scroll-behavior: smooth;
+}
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -103,6 +105,7 @@ nav ul{
 nav ul li{
     margin-left: 68px;
     padding: 29px 0px;
+    border-top: 2px solid transparent;
 }
 nav ul li:hover {
     color: var(--main-color);
@@ -254,6 +257,7 @@ nav ul li:hover {
 .card-subtitle{
     margin: 8px 0 8px 0;
 }
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -309,9 +313,10 @@ nav ul li:hover {
 }
 
 .activites-cards {
-    gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
 }
 
 .activites .card {
@@ -327,12 +332,7 @@ nav ul li:hover {
 }
 .activites .card-content{
     padding: 20px 0;
-}
-
-.activites .card-title{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    margin-left:19px;
 }
 
 /****** Footer ***********/
@@ -386,9 +386,15 @@ nav ul li:hover {
         margin: 20px 15px 0 0;
     }
 
+    .activites-cards .card{  
+    display: flex;
+    flex-direction: column;
+    }
+
     .activites-cards img {
         height: 200px;
     }
+
 
 }
 
@@ -424,6 +430,8 @@ nav ul li:hover {
     nav ul li{
         margin: 0;
         padding: 0;
+        border-bottom: 2px solid var(--main-bg-color);
+
     }
     nav ul li a {
         display: inline-block;
@@ -488,6 +496,7 @@ nav ul li:hover {
         margin-top: 0; 
     }
 
+
     section.populaires{
         margin: 0;
         background:var(--main-bg-color);
@@ -506,6 +515,11 @@ nav ul li:hover {
     .hebergements-cards{
     grid-template-columns: 1fr;
  }
+
+
+.more {
+    margin-bottom: 20px;
+}
 /* Mobile activités */
 
 .activites-cards{
