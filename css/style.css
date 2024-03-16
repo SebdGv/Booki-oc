@@ -48,17 +48,12 @@ h3{
     font-size: 16px;
 }
 
-.card p{
-    font-size: 14px;
-}
-
 a {
     color: inherit;
     text-decoration: none;
 }
 ul {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -77,6 +72,9 @@ ul {
 .card img {
     object-fit: cover;
 }
+.card p {
+    font-size: 14px;
+}
 
 .euro {
     font-weight: 700;
@@ -93,6 +91,7 @@ header{
     justify-content: space-between;
     height: 79px;
 }
+
 .logo{
     display: flex;
     width: 61px;
@@ -161,6 +160,10 @@ nav ul li:hover {
     border-radius: 0px 15px 15px 0px;
     transform: translateX(-10px);
     cursor: pointer;
+}
+
+.search-btn:hover{
+    filter:saturate(2);
 }
 
 .fa-solid.fa-magnifying-glass {
@@ -403,7 +406,6 @@ nav ul li:hover {
     left: 20px;
     transform: translateY(-50%);
 }
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -414,7 +416,6 @@ nav ul li:hover {
     }
 
     /* Mobile Header/Nav */
-
 
     header {
         display: flex;
@@ -450,7 +451,7 @@ nav ul li:hover {
     }
     
 nav ul li:hover {
-    border-top: none;
+    border-top: 2px solid transparent;
     border-bottom: 2px solid var(--main-color);
     
 }
