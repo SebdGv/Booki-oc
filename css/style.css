@@ -1,4 +1,4 @@
-/********** General ***********/
+/* ================= General ================= */
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -12,7 +12,7 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 
-    /* fonts */
+    /* font weight */
     --bold-font-weight: 700;
     --regular-font-weight:400;
 
@@ -29,6 +29,7 @@ body {
 html {
         scroll-behavior: smooth;
 }
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -57,11 +58,6 @@ ul {
     padding: 0;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
 .card {
     background-color: white;
     border-radius: 20px;
@@ -87,7 +83,8 @@ ul {
 .neutral-star {
     color: var(--main-bg-color)
 }
-/****** Header |&| Nav ***********/
+
+/* ================= Header |=>| Nav bar ================= */
 
 header{
     display: flex;
@@ -101,6 +98,7 @@ header{
     width: 61px;
     height: 19px;
 }
+
 nav ul{
     display: flex;
 }
@@ -110,15 +108,19 @@ nav ul li{
     padding: 29px 0px;
     border-top: 2px solid transparent;
 }
+
 nav ul li:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
 
-/****** Search section ***********/
+/* ================= Search Section ================= */
 
+.search-title{
+    line-height: 25.8px;
+}
 
-/*---Search Bar --*/
+/* <<<<< Search Bar >>>>> */
 
 .search-bar {
     display: flex;
@@ -140,6 +142,7 @@ nav ul li:hover {
     border: 1px solid var(--main-bg-color);
     border-right: none;
 }
+
 .search-input:focus{
     outline: none;
 }
@@ -150,7 +153,6 @@ nav ul li:hover {
     font-size: 18px;
     opacity: 1;
 }
-
 
 .search-btn span {
     color: #fff;
@@ -175,7 +177,7 @@ nav ul li:hover {
     display: none;
 }
 
-/*--- Filters button --*/
+/* <<<<< Filters button >>>>> */
 
 .filters {
     display: flex;
@@ -204,7 +206,6 @@ nav ul li:hover {
     padding: 0;
 }
 
-
 .btn:hover{
     background: var(--lightblue);
     cursor: pointer;
@@ -222,7 +223,7 @@ nav ul li:hover {
     padding: 14px 10px 14px 19px;
 }
 
-/*--- (i) Info sentence --*/
+/* <<<<< (i) Info sentence >>>>> */
 
 .info-text {
     display: flex;
@@ -237,8 +238,8 @@ nav ul li:hover {
     border: 1px solid var(--main-bg-color);
     border-radius: 300px;
 }
+/* ================= Hebergements And Populaires ================= */
 
-/****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -251,7 +252,7 @@ nav ul li:hover {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/* <<<<< Hebergements >>>>> */
 .hebergements {
     width: 65%;
 }
@@ -262,11 +263,13 @@ nav ul li:hover {
     gap: 30px;
     margin-top: 33px;
 }
+
 .hebergements-cards img {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
+
 .hebergements .card-content{
     display: flex;
     flex-direction: column;
@@ -280,7 +283,7 @@ nav ul li:hover {
 color: var(--main-color);
 }
 
-/****** Populaires ***********/
+/* <<<<< Populaires >>>>> */
 .populaires {
     width: 32%;
 }
@@ -325,11 +328,12 @@ color: var(--main-color);
     margin-bottom: 5px;
 }
 
-/****** Section Activités ***********/
+/* ================= Activites Section ================= */
 
 .activites {
     padding: 30px;
 }
+
 .activites-title {
     margin: 30px 0;
 }
@@ -351,6 +355,7 @@ color: var(--main-color);
     height: 380px;
     border-radius: 20px 20px 0 0;
 }
+
 .activites .card-content{
     height: 59px;
     display: flex;
@@ -358,7 +363,7 @@ color: var(--main-color);
     margin-left: 19px;
 }
 
-/****** Footer ***********/
+/* ================= Footer ================= */
 
 .footer{
     background: var(--main-bg-color);
@@ -374,11 +379,12 @@ color: var(--main-color);
 .footer ul li{
     padding-bottom: 15px;
 }
+/* ================================================= */
+/* ================= Media queries ================= */
+/* ================================================= */
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* <<<<< Medium devices (tablets, less/equal than 1024px) >>>>> */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -428,7 +434,8 @@ color: var(--main-color);
 }
 }
 
-/* Small devices (phones, less than 768px) */
+/* <<<<< Small devices (phones, less than 768px) >>>>> */
+
 @media (max-width: 768px) {
     .main-container{
         margin-top: 30px;
