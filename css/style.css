@@ -148,6 +148,7 @@ nav ul li:hover {
     color: var(--black);
     font-weight: var(--bold-font-weight);
     font-size: 18px;
+    opacity: 1;
 }
 
 
@@ -178,25 +179,31 @@ nav ul li:hover {
 
 .filters {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 15px;
     margin-bottom: 35px;
-    gap: 4px;
+}
+
+.filters-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #fff;
     border: 2px solid var(--main-bg-color);
     border-radius: 25px;
-   
-    height: 50px;
-    padding: 0 19px;
-    margin-left: 15px;
-        transition: 0.15s;
+    transition: 0.15s;
+    max-height: 50px;
+    padding: 0;
 }
 
-.btn span {
-    margin-left: 10px;
-}
 
 .btn:hover{
     background: var(--lightblue);
@@ -206,10 +213,13 @@ nav ul li:hover {
 .btn span {
     font-weight: var(--bold-font-weight);
     font-size: 16px;
+    padding: 15px 19px 15px 0px;
+    white-space: nowrap;
 }
 
 .btn .fa-solid {
     font-size: 22px;
+    padding: 14px 10px 14px 19px;
 }
 
 /*--- (i) Info sentence --*/
@@ -267,7 +277,7 @@ nav ul li:hover {
 }
 
 .more:hover{
-color: var(--main-color) ;
+color: var(--main-color);
 }
 
 /****** Populaires ***********/
@@ -396,8 +406,8 @@ color: var(--main-color) ;
     .filters {
     display: inline-block;
     }
-    .filters-btn .btn{
-        margin-top: 20px;
+    .filterText{
+        margin-bottom: 20px;
     }
 
     .activites-cards .card{  
@@ -491,10 +501,16 @@ nav ul li:hover {
         color: #fff;
             }           
 
+     .filters{
+        justify-content: center;
+        width: 100%;
+    }
+
     .filters-btn{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 668px;
+        gap: 10px;
+        justify-content: center;
     }
 
     .btn span{
