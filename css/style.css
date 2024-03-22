@@ -297,6 +297,7 @@ color: var(--main-color);
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    max-height: 136px;
 }
 
 .populaires-cards img {
