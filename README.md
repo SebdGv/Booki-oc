@@ -1,1 +1,2 @@
-Integration d'une maquette / HTML / CSS
+Integration d'une maquette 
+HTML / CSS responsive
